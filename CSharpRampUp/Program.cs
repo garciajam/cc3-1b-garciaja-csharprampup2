@@ -12,7 +12,7 @@ namespace CSharpRampUp
             Console.WriteLine("=============================================");
             Console.Write("Length in Miles (mi): ");
             double lengthmi = Convert.ToDouble(Console.ReadLine());
-            double lengthkm = weightlbs * 1.609;
+            double lengthkm = lengthmi * 1.609;
             Console.WriteLine("Length in Kilometers (km): " + lengthkm);
 
             Console.WriteLine("=============================================");
@@ -52,7 +52,7 @@ namespace CSharpRampUp
             Console.Write("Age of Student 10: ");
             int student10 = Convert.ToInt32(Console.ReadLine());
 
-            int studentAges = (student1 + student2 + student3 + student4 + student5 + student6 + student7 + student8 + student9 + student10) / 10;
+            double studentAges = (student1 + student2 + student3 + student4 + student5 + student6 + student7 + student8 + student9 + student10) / 10.0;
             Console.WriteLine("The average age of the students is: " + studentAges);
 
             //Characters
@@ -120,10 +120,17 @@ namespace CSharpRampUp
             else
             {
                 int result = 0;
+
                 for (int i = 1; i <= number2; i++)
                 {
+                    Console.Write(i);
+                    if (i < number2)
+                    {
+                        Console.Write(" + ");
+                    }
                     result += i;
                 }
+                Console.WriteLine();
                 Console.WriteLine("Output: " + result);
             }
 
