@@ -105,7 +105,7 @@ namespace CSharpRampUp
                     {
                         Console.Write(y + " ");
                     }
-                    Console.WriteLine(" ");
+                    Console.WriteLine("");
                 }
             }
 
@@ -143,7 +143,7 @@ namespace CSharpRampUp
                     {
                         Console.Write(b + " ");
                     }
-                    Console.WriteLine();
+                    Console.WriteLine("");
                 }
             }
         }
