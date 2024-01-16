@@ -1,4 +1,4 @@
-﻿namespace CSharpRampUp
+namespace CSharpRampUp
 {
     internal class Program
     {
@@ -99,11 +99,11 @@
             }
             else
             {
-                for (int i = 1; i <= number; i++)
+                for (int x = 1; x <= number; x++)
                 {
-                    for (int j = 1; j <= i; j++)
+                    for (int y = 1; y <= x; y++)
                     {
-                        Console.Write(j + " ");
+                        Console.Write(y + " ");
                     }
                     Console.WriteLine(" ");
                 }
@@ -137,11 +137,11 @@
             }
             else
             {
-                for (int k = number3; k >= 1; k--)
+                for (int a = number3; a >= 1; a--)
                 {
-                    for (int l = 1; l <= k; l++)
+                    for (int b = 1; b <= a; b++)
                     {
-                        Console.Write(l + " ");
+                        Console.Write(b + " ");
                     }
                     Console.WriteLine();
                 }
